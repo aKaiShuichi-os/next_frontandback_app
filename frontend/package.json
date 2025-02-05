@@ -4,12 +4,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
-    "dev:backend": "nodemon backend/server.js",
-    "dev:frontend": "next dev -p 3000",
+    "dev": "next dev -p 3000",
     "build": "next build",
-    "start": "node backend/server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "next start"
   },
   "keywords": [],
   "author": "",
