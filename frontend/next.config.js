@@ -1,11 +1,11 @@
-const path = require("path");
+const path = require('path');
 
 module.exports = {
   reactStrictMode: true,
   experimental: {
-    appDir: true, // Ensure Next.js loads app dir properly
+    appDir: true,
   },
-  output: "standalone", // Ensure Next.js uses shared dependencies
+  output: "standalone",
   webpack: (config) => {
     config.resolve.modules.push(path.resolve(__dirname, "../node_modules"));
     return config;
